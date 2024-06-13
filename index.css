@@ -1,0 +1,204 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 55px;
+}
+
+body {
+    overflow-x: hidden;
+    background: #D1FFBD;
+}
+
+.navbar {
+    font-family: "DM Serif Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    background: #D1FFBD;
+}
+
+.hero {
+    background-image: url('./images/background.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#introduction {
+    font-family: "Gwendolyn", serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 40px;
+    color: black;
+    text-align: center;
+    margin-top: 0;
+}
+
+#featured {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.pagetitle {
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+
+.card {
+    justify-content: space-between;
+    width: 300px;
+    margin: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-family: "DM Serif Text", serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Categories section */
+.category-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.category-img {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.category-description {
+    flex: 1;
+}
+
+.category-description h2,
+.category-description h5,
+.category-description p {
+    font-family: "DM Serif Text", serif;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Sample Resources Section */
+
+#resources iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.aboutustxt {
+   font-family: "DM Serif Text", serif;
+   text-align: justify;
+   margin-left: 90px;
+   margin-right: 90px;
+   margin-bottom: 40px;
+   padding: 3rem;
+
+}
+
+
+#contactus {
+    display: flex;
+    justify-content: center;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-size: auto;
+    color: black;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+
+
+/*Mobile View*/
+@media screen and (max-width: 767px) {
+    .hero {
+        padding: 2rem 0;
+    }
+
+    #introduction {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .pagetitle {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .category-img {
+        margin-right: 0; 
+    }
+
+    #categories-section {
+        margin-bottom: 20px;
+        margin-top: 1400px;
+    }
+
+    .category-description {
+        padding: 0 10px;
+    }
+
+    .aboutustxt {
+        margin: 20px;
+        padding: 1rem;
+    }
+
+    #featured {
+        margin-top: 400px; /* Add margin to featured section */
+        margin-bottom: 20px; /* Add margin to featured section */
+    }
+
+    #contact {
+        display: flex;
+        justify-content: center; /* Center contact section */
+    }
+
+    .contactme {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    #map {
+        display: block;
+        width: 100%;
+        margin: auto; /* Center map */
+    }
+
+    .footer {
+        margin-top: 10px;
+    }
+}
